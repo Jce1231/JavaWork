@@ -26,8 +26,8 @@ public static double returnDoub() {
 public static String returnStr() {
 	return "This is a string";
 }
-public static Dog returnDog(){
-	Dog charlie = new Dog("Charlie",10);
-	return charlie;
+public static Dog returnDog(Dog name){
+	
+	return name;
 }
 }

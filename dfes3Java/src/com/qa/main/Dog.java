@@ -2,7 +2,6 @@ package com.qa.main;
 public class Dog {
     String name;
     int weight;
-    String file;
     public Dog(String name, int weight) {
         this.name = name;
         this.weight = weight;
@@ -15,7 +14,7 @@ public class Dog {
     }
 	@Override
 	public String toString() {
-		return "Dog [name=" + name + ", weight=" + weight + ", file=" + file + "]";
+		return "Dog [name=" + name + ", weight=" + weight + "]";
 	}
-    
+  
 }
