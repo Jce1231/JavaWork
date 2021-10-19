@@ -10,7 +10,7 @@ public class DiceRoller {
 //			10 sided
 
 	public static int roll(int diceType) {
-		int rolled = new Random().nextInt(diceType+1)+1;
+		int rolled = new Random().nextInt(diceType)+1;
 		if (rolled == diceType) {
 		rolled += roll(diceType);
 		}
