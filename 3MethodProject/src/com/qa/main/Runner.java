@@ -15,10 +15,14 @@ public static void main(String[] args) {
 //	Dog charlie = new Dog("Charlie",10);
 //	Dog Alfred = Returns.returnDog(charlie);
 //	System.out.println(Alfred);
-	System.out.println(Calculator.addNum(10,4));
-	System.out.println(Calculator.subNum(10,4));
-	System.out.println(Calculator.divNum(10,4));
-	System.out.println(Calculator.mulNum(10,4));
-	System.out.println(Calculator.powNum(10,4));
+//	System.out.println(Calculator.addNum(10,4));
+//	System.out.println(Calculator.subNum(10,4));
+//	System.out.println(Calculator.divNum(10,4));
+//	System.out.println(Calculator.mulNum(10,4));
+//	System.out.println(Calculator.powNum(10,4));
+	System.out.println(DiceRoller.sum1OfEach());
+	System.out.println(DiceRoller.sum2TenDice2ThreeDice());
+	System.out.println(DiceRoller.sum4SixDice());
+	System.out.println(DiceRoller.sum4SixMinusSmall());
 }
 }

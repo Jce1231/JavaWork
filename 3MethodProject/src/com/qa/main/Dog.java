@@ -13,4 +13,8 @@ public class Dog {
     public void play() {
         System.out.println("I am playing");
     }
+	@Override
+	public String toString() {
+		return "Dog [name=" + name + ", weight=" + weight + "]";
+	}
 }
