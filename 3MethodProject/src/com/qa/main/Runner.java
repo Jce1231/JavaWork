@@ -37,7 +37,11 @@ public static void main(String[] args) {
 //	System.out.println(DiceRoller.sum4SixDice());
 //	System.out.println(DiceRoller.sum4SixMinusSmall());
 	
-	System.out.println(statements.compare10(15));
-	statements.flowChart(450);
+//	System.out.println(statements.compare10(15));
+//	statements.flowChart(450);
+	System.out.println(statements.blackJack(10,19)); //Expected out 19
+	System.out.println(statements.blackJack(22,22)); //Expected out 0
+	System.out.println(statements.blackJack(21,19)); //Expected out 21
+	System.out.println(statements.blackJack(19,22)); //Expected out 19
 }
 }
