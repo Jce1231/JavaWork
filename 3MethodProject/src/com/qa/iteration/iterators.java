@@ -47,5 +47,24 @@ public class iterators {
 		}while (total > b);
 		System.out.println("You're spending too much money, spending spree over");
 	}
+	//Flowchart
 	
+	public static void flowchart1() {
+		for (int a = 100;a<200;a++) {
+			System.out.println(a);
+		}
+	}
+	
+	//Flowchart 2
+	
+	public static void flowchart2() {
+		for (int a = 100;a<200;a++) {
+			if (a%2==0) {
+			System.out.println("*");
+			}else {
+				System.out.println("-");
+			
+			}
+		}
+	}
 }
