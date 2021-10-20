@@ -71,9 +71,20 @@ public static void main(String[] args) {
 //	System.out.println(statements.amntTax(34500)); // 6900.0
 //	System.out.println(statements.taxAmnt(34500)); // 6900.0
 	
-	iterators.demoWhile(545,85);
-	iterators.randomWhile(500,32);
-	iterators.demoDoWhile(66, 120);
-	iterators.demoDoWhile(545, 85);
+	//Do while loops
+//	iterators.demoWhile(545,85);
+//	iterators.randomWhile(500,32);
+//	iterators.demoDoWhile(66, 120);
+//	iterators.demoDoWhile(545, 85);
+//	
+	
+	//Exercises
+
+	iterators.flowchart1();
+	iterators.flowchart2();
+	iterators.print110();
+	iterators.print111010();
+
+
 }
 }

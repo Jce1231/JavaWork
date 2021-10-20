@@ -67,4 +67,33 @@ public class iterators {
 			}
 		}
 	}
+	
+//	Create a method that can print out the numbers 1-10 10 times each.
+//
+	public static void print110() {
+		for (int i = 1; i<11;i++) {
+			for (int j = 1; j<11;j++) {
+				System.out.println(i); //Can print J instead for each number going 1 to 10, but
+				//use i so we see 10 sets of 1 then 10 sets of 2.. etc..
+			}
+		}
+	}
+	
+	
+//	If you have used a while()-loop at any point in these exercises,
+//	replace them with for()-loops. Remember you should use a for()-loop when
+//	you know when the iteration should end.
+//
+//	Create a method to print the numbers 1 to 10 as many times as the value of that number.
+//	For example; you will print 1 once, and 10 ten times.
+	
+	public static void print111010() {
+		for (int i = 1; i<11;i++) {
+			for (int j = 11;j>0;j--) {
+				if (i>=j) {
+					System.out.println(i);
+				}
+			}
+		}
+	}
 }
