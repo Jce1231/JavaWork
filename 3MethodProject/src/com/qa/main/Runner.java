@@ -79,12 +79,12 @@ public static void main(String[] args) {
 //	
 	
 	//Exercises
+//
+//	iterators.flowchart1();
+//	iterators.flowchart2();
+//	iterators.print110();
+//	iterators.print111010();
 
-	iterators.flowchart1();
-	iterators.flowchart2();
-	iterators.print110();
-	iterators.print111010();
-
-
+	iterators.changeCounter(20.5,293);
 }
 }

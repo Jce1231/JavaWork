@@ -96,4 +96,81 @@ public class iterators {
 			}
 		}
 	}
+	
+	
+	
+//	Coins
+//	Given a cost and an amount, work out the change given in specific coinage.
+//	For example; the cost is £4.58 and the customer
+//	pays with a £20 note so as change they receive:
+//	1 £10 note
+//	1 £5 note
+//	2 20p's
+//	1 2p
+
+	public static void changeCounter(double a, double b) { //A = cost B = Amount given
+		double total = b;
+		double cost = a;
+		System.out.println("Product costs : "+cost + "You are paying with : " + total);
+		total -= cost;
+		System.out.println("Your change is : " + total + "Paid out in ");
+		int curTens = 0;
+		int curFives= 0;
+		int cur2pnd= 0;
+		int cur1pnd= 0;
+		int cur50p= 0;
+		int cur20p= 0;
+		int cur10p= 0;
+		int cur5p= 0;
+		int cur2p= 0;
+		int cur1p= 0;
+		while (total>=10) {
+			total -= 10;
+			curTens++;
+		}
+		System.out.println("Change to receive is :" + curTens + " £10 pound note.");
+		while (total>=5) {
+			total -= 5;
+			curFives++;
+		}
+		System.out.println("Change to receive is :" + curFives + " £5 pound note.");
+		while (total>=2) {
+			total -= 2;
+			cur2pnd++;
+		}
+		System.out.println("Change to receive is :" + cur2pnd + " £2 pound coins.");
+		while (total>=1) {
+			total -= 1;
+			cur1pnd++;
+		}
+		System.out.println("Change to receive is :" + cur1pnd + " £1 pound coins.");
+		while (total>=0.5) {
+			total -= 0.5;
+			cur50p++;
+		}
+		System.out.println("Change to receive is :" + cur50p + " 50p's.");
+		while (total>=0.2) {
+			total -= 0.2;
+			cur20p++;
+		}
+		System.out.println("Change to receive is :" + cur20p + " 20p's.");
+		while (total>=0.1) {
+			total -= 0.1;
+			cur10p++;
+		}System.out.println("Change to receive is :" + cur10p + " 10p's.");
+		while (total>=0.05) {
+			total -= 0.05;
+			cur5p++;
+		}System.out.println("Change to receive is :" + cur5p + " 5p's.");
+		while (total>=0.02) {
+			total -= 0.02;
+			cur2p++;
+		}System.out.println("Change to receive is :" + cur2p + " 2p's.");
+		while (total>=0.01) {
+			total -= 0.01;
+			cur1p++;
+		}System.out.println("Change to receive is :" + cur1p + " 1p's.");
+
+		
+	}
 }
