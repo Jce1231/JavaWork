@@ -84,4 +84,25 @@ public class statements {
 		return sum;
 	}
 	
+//	
+//	FizzBuzz
+//	Create a method which returns 'Fizz' for multiples of three
+//	and 'Buzz' for the multiples of five.
+//	Return 'FizzBuzz' for numbers which are multiples of both three and five.
+//	Return the input number for numbers that are neither.
+	public static String fizzBuzz(int a) {
+		String fizzer = "";
+		if (a % 3 == 0 || a % 5 == 0) {
+			if (a % 3 == 0) {
+			fizzer += "Fizz";
+			} 
+			if (a % 5 == 0){ 
+				fizzer += "Buzz";
+			}
+			return fizzer;
+			}else {
+				return (String.valueOf(a));
+		}
+	}
 }
+	

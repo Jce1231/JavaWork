@@ -44,9 +44,14 @@ public static void main(String[] args) {
 //	System.out.println(statements.blackJack(21,19)); //Expected out 21
 //	System.out.println(statements.blackJack(19,22)); //Expected out 19
 	
-	System.out.println(statements.uniqueSum(1, 1, 2)); //Expected 2
-	System.out.println(statements.uniqueSum(3, 5, 3)); //Expected 5
-	System.out.println(statements.uniqueSum(10, 6, 6)); //Expected 10
-	System.out.println(statements.uniqueSum(6, 6, 6)); //Expected 0
+//	System.out.println(statements.uniqueSum(1, 1, 2)); //Expected 2
+//	System.out.println(statements.uniqueSum(3, 5, 3)); //Expected 5
+//	System.out.println(statements.uniqueSum(10, 6, 6)); //Expected 10
+//	System.out.println(statements.uniqueSum(6, 6, 6)); //Expected 0
+	
+	System.out.println(statements.fizzBuzz(3)); //Expected Fizz,
+	System.out.println(statements.fizzBuzz(5)); //Expected Buzz,
+	System.out.println(statements.fizzBuzz(15)); //Expected FizzBuzz,
+	System.out.println(statements.fizzBuzz(7)); //Expected 7,
 }
 }
