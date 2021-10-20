@@ -60,4 +60,28 @@ public class statements {
 				}
 			}
 		}
+//	Unique Sum
+//	Given 3 integer values, return their sum.
+//	If one value is the same as another value, 
+//	they do not count towards the sum. In other words, 
+//	only return the sum of unique numbers given.
+	public static int uniqueSum(int a, int b, int c) {
+		int sum = 0;
+//So if A = B and B = c , return 0
+//	 if a = b and c != a|b return C
+		if ( a == b) {
+			if (a == c) {
+				sum = 0; //ABC = 0
+			}else {
+				sum = c;// AB = 0
+				} 
+		}else if (b == c) {
+			sum = a; //BC = 0
+		}else if (a==c){
+		sum = b;
+		}else{ sum = a+b+c; //ABC not equal each other
+		}
+		return sum;
+	}
+	
 }
