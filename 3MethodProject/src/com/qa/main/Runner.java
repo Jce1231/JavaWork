@@ -85,6 +85,7 @@ public static void main(String[] args) {
 //	iterators.print110();
 //	iterators.print111010();
 
-	iterators.changeCounter(20.5,293);
+//	iterators.changeCounter(20.5,293);
+	iterators.addDigits(753);
 }
 }
