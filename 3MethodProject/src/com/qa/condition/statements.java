@@ -137,7 +137,7 @@ public class statements {
 //	These 2 methods should be able to work independently,
 //	so it is fine in this case if some of the code is repeated.*
 	public static double amntTax(int a) {
-		double tax = 0f;
+		double tax = 0;
 		if (a < 15000) {
 			tax = 0;
 		}else if (a <20000) {
