@@ -33,4 +33,19 @@ public class iterators {
 		}
 		System.out.println("You're spending too much money, spending spree over");
 	}
+	
+//	Task - Make a new method, using the code from the previous loop
+//	converting it to a do while loop
+//	- attempt to start with a low total than the minimum value across both loops
+	public static void demoDoWhile(int a, int b) { //A = total, B = limit
+		int subAmnt = 45;
+		int total = a;
+		System.out.println("Spending Spree");
+		do {
+			total -= subAmnt;
+			System.out.println("Amount leftover: " + total);
+		}while (total > b);
+		System.out.println("You're spending too much money, spending spree over");
+	}
+	
 }

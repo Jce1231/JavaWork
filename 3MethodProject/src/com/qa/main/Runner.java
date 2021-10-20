@@ -73,5 +73,7 @@ public static void main(String[] args) {
 	
 	iterators.demoWhile(545,85);
 	iterators.randomWhile(500,32);
+	iterators.demoDoWhile(66, 120);
+	iterators.demoDoWhile(545, 85);
 }
 }
