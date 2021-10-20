@@ -49,9 +49,13 @@ public static void main(String[] args) {
 //	System.out.println(statements.uniqueSum(10, 6, 6)); //Expected 10
 //	System.out.println(statements.uniqueSum(6, 6, 6)); //Expected 0
 	
-	System.out.println(statements.fizzBuzz(3)); //Expected Fizz,
-	System.out.println(statements.fizzBuzz(5)); //Expected Buzz,
-	System.out.println(statements.fizzBuzz(15)); //Expected FizzBuzz,
-	System.out.println(statements.fizzBuzz(7)); //Expected 7,
+//	System.out.println(statements.fizzBuzz(3)); //Expected Fizz,
+//	System.out.println(statements.fizzBuzz(5)); //Expected Buzz,
+//	System.out.println(statements.fizzBuzz(15)); //Expected FizzBuzz,
+//	System.out.println(statements.fizzBuzz(7)); //Expected 7,
+	
+	System.out.println(statements.perTax(34500)); // Expected 20
+	System.out.println(statements.amntTax(34500)); // 6900.0
+	System.out.println(statements.taxAmnt(34500)); // 6900.0
 }
 }
