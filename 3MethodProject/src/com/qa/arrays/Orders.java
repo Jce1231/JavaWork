@@ -1,18 +1,22 @@
 package com.qa.arrays;
 
+import java.util.ArrayList;
+
 public class Orders {
-	String name;
-	String size;
-	String extra;
-	public Orders(String size, String name, String extra) {
-		this.name = name;
-		this.size = size;
-		this.extra = extra;
+	double orderTotal;
+	int orderID;
+	public static int totalOrders;
+	ArrayList<Items> items = new ArrayList<>();
+	public Orders(Items item) {
+		this.items.add(item);
+		totalOrders++;
+		this.orderID = totalOrders;
 	}
-	@Override
-	public String toString() {
-//		return "Orders [name=" + name + ", size=" + size + ", extra=" + extra + "]";
-		return size +" "+ name + " W/ " + extra; 
+	public double calOrderTotal() {
+		double total = 0d;
+		for (Items a : this.items) {
+			total += a.price;
+		}
+		return total;
 	}
-	
 }
