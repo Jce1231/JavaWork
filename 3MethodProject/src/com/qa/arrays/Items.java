@@ -39,7 +39,7 @@ public class Items {
 	@Override
 	public String toString() {
 //		return "Orders [name=" + name + ", size=" + size + ", extra=" + extra + "]";
-		return size +" "+ name + " W/ " + extra + "    Cost: " + price+"\n";
+		return "£" +price + " : "+ size +" "+ name + " W/ " + extra+"\n";
 	}
 	
 }

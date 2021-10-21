@@ -7,9 +7,10 @@ public class arrayListDemo {
 //	With a list of orders, create methods with paramaters
 //	that can do the following:
 //		2 ArrayLists, one doneOrders and orders
-//	public static ArrayList<O> orderedList = new ArrayList<>();
-	public static ArrayList<Items> orderList = new ArrayList<>();
+
+	public static ArrayList<Items> itemList = new ArrayList<>();
 	public static ArrayList<Items> doneOrders = new ArrayList<>();
+	public static ArrayList<Orders> orderList = new ArrayList<>();
 ////	
 	
 	
@@ -24,7 +25,7 @@ public class arrayListDemo {
 	
 //		- Add a new order to an orders array
 	public static void addOrder(Items item) {
-		orderList.add(item);
+		itemList.add(item);
 	}
 //		- Move an existing order to a 'Done orders array'
 	public static void moveOrder(int index) {
@@ -33,18 +34,18 @@ public class arrayListDemo {
 	}
 //		- Return the name of an order
 	public static Items getOrder(int index) {
-		return orderList.get(index);
+		return itemList.get(index);
 	}
 //		- Modify the order by index with a new name
 	public static void updateOrder(int index, Items text) {
-		orderList.set(index, text);
+		itemList.set(index, text);
 	}
 //		- Remove the order from either arrays
 	public static void removeOrder(boolean orderDone, int index) {
 		if (orderDone) {
 			doneOrders.remove(index);
 		}else {
-			orderList.remove(index);
+			itemList.remove(index);
 		}
 	}
 //		- Print the length of either arrays
@@ -52,7 +53,7 @@ public class arrayListDemo {
 		if (orderDone) {
 			return doneOrders.size();
 		}else {
-			return orderList.size();
+			return itemList.size();
 		}
 	}
 //		- Clear either arrays
@@ -60,7 +61,7 @@ public class arrayListDemo {
 		if (orderDone) {
 			doneOrders.clear();
 		}else {
-			orderList.clear();
+			itemList.clear();
 		}
 	}
 	

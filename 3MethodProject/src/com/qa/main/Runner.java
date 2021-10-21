@@ -1,5 +1,6 @@
 package com.qa.main;
 
+import com.qa.arrays.Orders;
 //import com.qa.arrays.arrayDemo;
 import com.qa.arrays.arrayListDemo;
 //import com.qa.condition.statements;
@@ -100,6 +101,21 @@ public static void main(String[] args) {
 	
 	//ArrayList Exercise
 	arrayListDemo.setupArrayList();
-	System.out.println(arrayListDemo.orderList);
+	System.out.println(arrayListDemo.itemList);
+
+	//create an order
+	Orders order = new Orders();
+	order.addItem(arrayListDemo.itemList.get(1));
+	order.addItem(arrayListDemo.itemList.get(2));
+	order.addItem(arrayListDemo.itemList.get(3));
+	order.addItem(arrayListDemo.itemList.get(1));
+	System.out.println(order);
+	
+	Orders order2 = new Orders();
+	order2.addItem(arrayListDemo.itemList.get(0));
+	order2.addItem(arrayListDemo.itemList.get(5));
+	order2.addItem(arrayListDemo.itemList.get(4));
+	order2.addItem(arrayListDemo.itemList.get(0));
+	System.out.println(order2);
 }
 }

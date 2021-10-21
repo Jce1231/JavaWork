@@ -7,16 +7,24 @@ public class Orders {
 	int orderID;
 	public static int totalOrders;
 	ArrayList<Items> items = new ArrayList<>();
-	public Orders(Items item) {
-		this.items.add(item);
+	public Orders() {
+		this.items = new ArrayList<>();
 		totalOrders++;
 		this.orderID = totalOrders;
 	}
-	public double calOrderTotal() {
+	public void addItem(Items item) {
+		this.items.add(item);
+		calOrderTotal();
+	}
+	public void calOrderTotal() {
 		double total = 0d;
 		for (Items a : this.items) {
 			total += a.price;
 		}
-		return total;
+		this.orderTotal = total;
+	}
+	@Override
+	public String toString() {
+		return "orderID=" + orderID + "\n" + items + " \n Total Price: " + this.orderTotal;
 	}
 }
