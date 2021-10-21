@@ -34,7 +34,7 @@ public class arrayDemo {
 	public static void arrayNumbers4() {
 		int[] numbers2 = {1,1,1,1,1,1,1,1,1,1};
 		for (int i = 0; i<numbers.length;i++) {
-			numbers2[numbers.length - (i+1)] = numbers[i]*numbers[i];
+			numbers2[numbers2.length - (i+1)] = numbers[i]*numbers[i];
 		}
 		String arrNum = Arrays.toString(numbers2);
 		System.out.println(arrNum);

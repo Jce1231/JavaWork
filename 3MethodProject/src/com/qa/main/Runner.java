@@ -1,8 +1,9 @@
 package com.qa.main;
 
-import com.qa.arrays.arrayDemo;
-import com.qa.condition.statements;
-import com.qa.iteration.iterators;
+//import com.qa.arrays.arrayDemo;
+import com.qa.arrays.arrayListDemo;
+//import com.qa.condition.statements;
+//import com.qa.iteration.iterators;
 
 public class Runner {
 public static void main(String[] args) {
@@ -90,11 +91,15 @@ public static void main(String[] args) {
 //	iterators.addDigits(753);
 	
 	
-	//Arrays, Exercise
-	arrayDemo.arrayNumbers();
-	arrayDemo.arrayNumbers2();
-	arrayDemo.arrayNumbers3();
-	arrayDemo.arrayNumbers4();
+//	//Arrays, Exercise
+//	arrayDemo.arrayNumbers();
+//	arrayDemo.arrayNumbers2();
+//	arrayDemo.arrayNumbers3();
+//	arrayDemo.arrayNumbers4();
+
 	
+	//ArrayList Exercise
+	arrayListDemo.setupArrayList();
+	System.out.println(arrayListDemo.orderList);
 }
 }
