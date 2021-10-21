@@ -129,5 +129,7 @@ public static void main(String[] args) {
 	pepperoni.eatPizza(3);
 	System.out.println(pepperoni);
 	
+	System.out.println(pepperoni.getSize());
+	
 }
 }
