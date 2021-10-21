@@ -1,5 +1,6 @@
 package com.qa.main;
 
+import com.qa.arrays.arrayDemo;
 import com.qa.condition.statements;
 import com.qa.iteration.iterators;
 
@@ -86,6 +87,14 @@ public static void main(String[] args) {
 //	iterators.print111010();
 
 //	iterators.changeCounter(20.5,293);
-	iterators.addDigits(753);
+//	iterators.addDigits(753);
+	
+	
+	//Arrays, Exercise
+	arrayDemo.arrayNumbers();
+	arrayDemo.arrayNumbers2();
+	arrayDemo.arrayNumbers3();
+	arrayDemo.arrayNumbers4();
+	
 }
 }
