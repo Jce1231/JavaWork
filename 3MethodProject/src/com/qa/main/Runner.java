@@ -1,6 +1,7 @@
 package com.qa.main;
 
-import com.qa.classExample.Pizza;
+import com.qa.animals.Cats;
+//import com.qa.classExample.Pizza;
 //import com.qa.condition.statements;
 //import com.qa.iteration.iterators;
 
@@ -116,20 +117,27 @@ public static void main(String[] args) {
 //	order2.addItem(arrayListDemo.itemList.get(0));
 //	System.out.println(order2);
 	
+//	
+//	
+//	//Classes Exercise
+//	
+//	Pizza pepperoni = new Pizza(12,"Rectangle",8);
+//	System.out.println(pepperoni);
+//	pepperoni.addTopping("Pepperoni");
+//	pepperoni.addTopping("Extra Pepperoni");
+//	pepperoni.eatPizza();
+//	System.out.println(pepperoni);
+//	pepperoni.eatPizza(3);
+//	System.out.println(pepperoni);
+//	
+//	System.out.println(pepperoni.getSize());
+//	
 	
-	
-	//Classes Exercise
-	
-	Pizza pepperoni = new Pizza(12,"Rectangle",8);
-	System.out.println(pepperoni);
-	pepperoni.addTopping("Pepperoni");
-	pepperoni.addTopping("Extra Pepperoni");
-	pepperoni.eatPizza();
-	System.out.println(pepperoni);
-	pepperoni.eatPizza(3);
-	System.out.println(pepperoni);
-	
-	System.out.println(pepperoni.getSize());
-	
+	//Class Inheritance exercise
+	Cats charlie = new Cats(4, false, "Panther", 28, true,"charlie", 39);
+	charlie.makeNoise();
+	charlie.jump();
+	charlie.moveAnimal();
+	System.out.println(charlie);
 }
 }
