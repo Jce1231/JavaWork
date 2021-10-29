@@ -4,7 +4,7 @@ public class Runner {
 	public static void main(String[] args) {
 		int userWin = 0;
 		int dealWin = 0;
-		for (int i = 0; i<15; i++) {
+		while (dealWin != 100000) {
 		Dealer d = new Dealer();
 		d.drawDeck();
 		User dealer = new User("Dealer");
@@ -14,10 +14,10 @@ public class Runner {
 		player.giveCard(d.drawCard());
 		dealer.giveCard(d.drawCard());
 		dealer.giveCard(d.drawCard());
-		while(player.getHandValue() <=16) {
+		while(player.getHandValue() < 18) {
 			player.giveCard(d.drawCard());
 		}
-		while(dealer.getHandValue()<=17) {
+		while(dealer.getHandValue()< 17 ) {
 			dealer.giveCard(d.drawCard());
 		}
 
