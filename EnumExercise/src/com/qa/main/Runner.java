@@ -6,6 +6,7 @@ public class Runner {
 		int dealWin = 0;
 		for (int i = 0; i<15; i++) {
 		Dealer d = new Dealer();
+		d.drawDeck();
 		User dealer = new User("Dealer");
 		User player = new User("Jordan");
 		
@@ -13,8 +14,12 @@ public class Runner {
 		player.giveCard(d.drawCard());
 		dealer.giveCard(d.drawCard());
 		dealer.giveCard(d.drawCard());
-		player.giveCard(d.drawCard());
-		dealer.giveCard(d.drawCard());
+		while(player.getHandValue() <=16) {
+			player.giveCard(d.drawCard());
+		}
+		while(dealer.getHandValue()<=17) {
+			dealer.giveCard(d.drawCard());
+		}
 
 		System.out.println(player);
 		System.out.println(dealer);
