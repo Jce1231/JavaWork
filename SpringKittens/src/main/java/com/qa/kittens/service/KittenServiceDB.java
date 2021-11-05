@@ -2,39 +2,57 @@ package com.qa.kittens.service;
 
 import java.util.List;
 
-import com.qa.kittens.domain.Kitten;
+import javax.persistence.EntityNotFoundException;
 
-public class KittenServiceDB implements KittenService{
+import org.springframework.stereotype.Service;
+
+import com.qa.kittens.domain.Kitten;
+import com.qa.kittens.repo.KittenRepo;
+
+@Service
+public class KittenServiceDB implements KittenService {
+	private KittenRepo repo;
+
+	/**
+	 * @param repo
+	 */
+	public KittenServiceDB(KittenRepo repo) {
+		super();
+		this.repo = repo;
+	}
 
 	@Override
 	public Kitten getKitten(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.repo.findById(id)
+				.orElseThrow(() -> new EntityNotFoundException("A Kitten could not be found with ID :" + id));
+
 	}
 
 	@Override
 	public List<Kitten> getKittens() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.repo.findAll();
 	}
 
 	@Override
 	public Kitten createKitten(Kitten newKitten) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.repo.save(newKitten);
 	}
 
 	@Override
 	public Kitten updateKitten(Integer id, Kitten updatedKitten) {
-		// TODO Auto-generated method stub
-		return null;
+		Kitten curKit = this.getKitten(id);
+		curKit.setBreed(updatedKitten.getBreed());
+		curKit.setName(updatedKitten.getName());
+		curKit.setWeight(updatedKitten.getWeight());
+		return this.repo.save(curKit);
 	}
 
 	@Override
 	public boolean deleteKitten(Integer id) {
-		return false;
+		this.repo.deleteById(id);
+		return !this.repo.existsById(id);
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
